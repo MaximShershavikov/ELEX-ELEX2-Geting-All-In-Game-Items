@@ -1,1 +1,1 @@
-# ELEX-ELEX2-Getting-In-Game-Items
+# ELEX-ELEX2-Getting-All-In-Game-Items
