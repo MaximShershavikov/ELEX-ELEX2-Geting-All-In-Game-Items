@@ -12,7 +12,7 @@
 ![изображение](https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/assets/46265118/8608617c-d80b-4b34-ad05-55cad3bac365)
 
 4. Next, select the item that you want to replace with new items. There are two options for this:
-- Enter 1 if you want to store "Small Healling Potion" in your inventory, you must make sure "Small Healling Potion" is in your inventory before doing so
+- Enter 1 if you want to store **"Small Healling Potion"** in your inventory, you must make sure **"Small Healling Potion"** is in your inventory before doing so. If you chose 1 then go to step 6 of this instruction. The replacement will have **"Small Healling Potion"** in your inventory
 
 ![изображение](https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/assets/46265118/abe0854c-0646-433d-8e42-4bf510d1ddf7)
 
@@ -22,15 +22,15 @@
 
 5. If option 2 is selected, enter the item number from the list of inventory items that you want to replace when listing all items. After selecting an item, the enumeration will begin.
 
-6. Wait for the program to find the item and change the item you selected. After the message "I found and changed!" move the mouse over the item of your choice. The item you selected should change to the new item. If the item icon has not changed, move the mouse to any other item and then return the mouse to the selected item.
+6. Wait for the program to find the item and change the item you selected. After the message **"I found and changed!"** move the mouse over the item of your choice. The item you selected should change to the new item. If the item icon has not changed, move the mouse to any other item and then return the mouse to the selected item.
 
 ![изображение](https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/assets/46265118/70bd0fe2-4c48-4fca-be33-65c203cb4ab9)
 
 ![изображение](https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/assets/46265118/eefe2c73-6ead-4cf2-8d69-2dcbab8f976a)
 
-7. After the item is found and replaced, you can enter "n" and end the search or enter "y" and continue searching for the next item.
+7. After the item is found and replaced, you can enter **"n"** and end the search or enter **"y"** and continue searching for the next item.
 
-8. After entering "y", the search will be carried out and then the replacement of the previous item found. After the message "I found and changed!" move the mouse to the previous item found. If the item icon has not changed, move the mouse to any other item and then return the mouse to the selected item.
+8. After entering **"y"**, the search will be carried out and then the replacement of the previous item found. After the message **"I found and changed!"** move the mouse to the previous item found. If the item icon has not changed, move the mouse to any other item and then return the mouse to the selected item.
 
 ![изображение](https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/assets/46265118/d190a531-0d83-40b0-9790-42cb2532b3c7)
 
