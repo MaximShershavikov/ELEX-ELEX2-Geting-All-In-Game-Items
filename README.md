@@ -43,7 +43,9 @@
 ![изображение](https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/assets/46265118/8ce6e371-3169-4d3c-a12e-495ba69700c1)
 
 9. In this way, you can list all the items in the inventory of the game ELEX and ELEX 2
-
+## System requirements
+- Windows 10
+- Windows 11
 ## Note
 This version of the program does not display the names of all inventory items
 
