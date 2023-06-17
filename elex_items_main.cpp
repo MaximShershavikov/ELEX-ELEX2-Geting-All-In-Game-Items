@@ -1,5 +1,5 @@
 ﻿/**********************************************************************************************************
-    ELEX-ELEX2-Geting-All-In-Game-Items Version 1.0. A program for geting all inventory items of
+    ELEX-ELEX2-Geting-All-In-Game-Items Version 1.1. A program for geting all inventory items of
     the game ELEX 1 and 2. Used to enumerate all in-game inventory items and replace the old
     inventory item with the new item received.
 
@@ -93,15 +93,15 @@ vector<Inventar_items_elex1> FindItemsInInventarElex1(HANDLE hHandl, LONGLONG ad
     do {
         ReadProcessMemory(hHandl, (LPCVOID)addrInv, InventarItems, sizeof(Inventar_items_elex1), lpNumOfBytes);
         if (InventarItems->Head == INVENTAR_ITEMS_HEAD_ELEX1 &&
-            InventarItems->ChangeAddres != NULL &&
-            InventarItems->ll3 == NULL &&
-            InventarItems->addr != NULL &&
-            InventarItems->ll5 == NULL &&
-            InventarItems->ll6 == NULL &&
-            InventarItems->FFFFFFFF == BYTE_FF_4 &&
-            InventarItems->ll8 == NULL &&
-            InventarItems->dw9 >= NULL &&
-            InventarItems->nums != NULL) {
+        InventarItems->ChangeAddres != NULL &&
+        InventarItems->ll3 == NULL &&
+        InventarItems->addr != NULL &&
+        InventarItems->ll5 == NULL &&
+        InventarItems->ll6 == NULL &&
+        InventarItems->FFFFFFFF == BYTE_FF_4 &&
+        InventarItems->ll8 == NULL &&
+        InventarItems->dw9 >= NULL &&
+        InventarItems->nums != NULL) {
             ReadProcessMemory(hHandl, (LPCVOID)InventarItems->ChangeAddres, addr_next, sizeof(LONGLONG), lpNumOfBytes);
             ReadProcessMemory(hHandl, (LPCVOID)*addr_next, block_1, sizeof(Block_1), lpNumOfBytes);
             if (block_1->Head == Block1_Head && block_1->ToControllPtr != NULL) {
@@ -332,6 +332,7 @@ void SearchForInGameInventoryItems(string mode) {
         cout << "Handle not found. Try restarting the program as administrator" << '\n';
         return;
     }
+
     GetProcessMemoryInfo(hHandl, &ppsmemCounters, sizeof(PROCESS_MEMORY_COUNTERS));
     AddrInventar = FindInventar(hHandl, ppsmemCounters, StructGetInvetarHead, offset);
     if (AddrInventar == -1) {
@@ -407,7 +408,7 @@ m2:
 
 void AboutProgram() {
     cout << "/**********************************************************************************************************" << '\n'
-         << "ELEX-ELEX2-Geting-All-In-Game-Items Version 1.0. A program for geting all inventory items of" << '\n'
+         << "ELEX-ELEX2-Geting-All-In-Game-Items Version 1.1. A program for geting all inventory items of" << '\n'
          << "the game ELEX 1 and 2. Used to enumerate all in-game inventory items and replace the old" << '\n'
          << "inventory item with the new item received." << '\n'
          << '\n'
