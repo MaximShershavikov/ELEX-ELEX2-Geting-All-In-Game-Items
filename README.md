@@ -1,9 +1,11 @@
-# ELEX-ELEX2-Getting-All-In-Game-Items
+# ELEX-ELEX2-Getting-All-In-Game-Items v1.1
 ![изображение](https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/assets/46265118/b3146f15-61b5-48d3-b4fe-2807dd3b358e)
+## Download
+https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/releases
 ## Instruction
 1. Start ELEX game
 
-2. Run ELEX-ELEX2-Getting-All-In-Game-Items as Administrator. ELEX-ELEX2-Geting-All-In-Game-Items should work in parallel with the running game ELEX 1 or 2
+2. Before starting the program, save the current game. Run ELEX-ELEX2-Getting-All-In-Game-Items as Administrator. ELEX-ELEX2-Geting-All-In-Game-Items should work in parallel with the running game ELEX 1 or 2
 
 ![изображение](https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/assets/46265118/a570a896-5302-4388-9cde-54de7dd7fee8)
 
@@ -47,7 +49,8 @@
 - Windows 10
 - Windows 11
 ## Note
-This version of the program does not display the names of all inventory items
+This version of the program does not display the names of all inventory items in ELEX 2. Item names are displayed in English only 
+
 
 
 
