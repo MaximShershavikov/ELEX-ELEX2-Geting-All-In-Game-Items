@@ -44,7 +44,9 @@ https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/release
 
 ![изображение](https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/assets/46265118/8ce6e371-3169-4d3c-a12e-495ba69700c1)
 
-9. In this way, you can list all the items in the inventory of the game ELEX and ELEX 2
+9. In this way, you can list all the items in the inventory of the game ELEX and ELEX 2.
+    
+10. After you have found the item you need, put all of it in the box or locker. Next, close the box or locker. Then open the box or locker and take your item from the box or locker. This is necessary for the inventory to be updated, since each type of item in the inventory has its own section. Each type of item must be in its own section of the inventory.
 ## System requirements
 - Windows 10
 - Windows 11
