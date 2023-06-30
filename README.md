@@ -1,4 +1,4 @@
-# ELEX-ELEX2-Getting-All-In-Game-Items v1.1
+# ELEX-ELEX2-Getting-All-In-Game-Items v1.2
 ![изображение](https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/assets/46265118/b3146f15-61b5-48d3-b4fe-2807dd3b358e)
 ## Download
 https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/releases
@@ -14,7 +14,7 @@ https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/release
 ![изображение](https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/assets/46265118/8608617c-d80b-4b34-ad05-55cad3bac365)
 
 4. Next, select the item that you want to replace with new items. There are two options for this:
-- Enter 1 if you want to store **"Small Healling Potion"** in your inventory, you must make sure **"Small Healling Potion"** is in your inventory before doing so. If you chose 1 then go to step 6 of this instruction. The replacement will have **"Small Healling Potion"** in your inventory
+- Enter 1 if you want to store **"Small Healing Potion"** in your inventory, you must make sure **"Small Healing Potion"** is in your inventory before doing so. If you chose 1 then go to step 6 of this instruction. The replacement will have **"Small Healing Potion"** in your inventory
 
 ![изображение](https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/assets/46265118/abe0854c-0646-433d-8e42-4bf510d1ddf7)
 
@@ -51,7 +51,7 @@ https://github.com/MaximShershavikov/ELEX-ELEX2-Geting-All-In-Game-Items/release
 - Windows 10
 - Windows 11
 ## Note
-This version of the program does not display the names of all inventory items in ELEX 2. Item names are displayed in English only 
+Item names are displayed in English only 
 
 
 
