@@ -1,5 +1,5 @@
 ﻿/**********************************************************************************************************
-    ELEX-ELEX2-Geting-All-In-Game-Items Version 1.1. A program for geting all inventory items of
+    ELEX-ELEX2-Geting-All-In-Game-Items Version 1.2. A program for geting all inventory items of
     the game ELEX 1 and 2. Used to enumerate all in-game inventory items and replace the old
     inventory item with the new item received.
 

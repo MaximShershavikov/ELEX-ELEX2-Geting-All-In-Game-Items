@@ -1,5 +1,5 @@
 ﻿/**********************************************************************************************************
-    ELEX-ELEX2-Geting-All-In-Game-Items Version 1.1. A program for geting all inventory items of
+    ELEX-ELEX2-Geting-All-In-Game-Items Version 1.2. A program for geting all inventory items of
     the game ELEX 1 and 2. Used to enumerate all in-game inventory items and replace the old
     inventory item with the new item received.
 
@@ -129,7 +129,7 @@ void GetInGameItems(HANDLE hHandl, PROCESS_MEMORY_COUNTERS ppsmemCounters, LONGL
     int count = 1;
     LONGLONG StartAddress = NULL, next = NULL, EndAddress;
     string yes_or_no, signatur;
-    cout << " Please, Wait...." << '\n';
+    cout << " Please, Wait....";
     while (count < number_of_items) {
         VirtualQueryEx(hHandl, (LPCVOID)next, &lpBuffer, sizeof(MEMORY_BASIC_INFORMATION));
         if (next > ppsmemCounters.PeakPagefileUsage) break;
@@ -147,12 +147,13 @@ void GetInGameItems(HANDLE hHandl, PROCESS_MEMORY_COUNTERS ppsmemCounters, LONGL
                             ReadProcessMemory(hHandl, (LPCVOID*)block_1->WeUsePtr, id_struct, sizeof(Ids), lpNumOfBytes);
                             signatur = format("{:0>8x}", id_struct->Signature4) + format("{:0>8x}", id_struct->Signature3) + format("{:0>8x}", id_struct->Signature2) + format("{:0>8x}", id_struct->Signature1);
                             WriteProcessMemory(hHandl, (LPVOID)СhangeAddress, &block_1->WeUsePtr, sizeof(block_1->WeUsePtr), lpNumOfBytes);
+                            cout << '\r' << "                 ";
                             if (mode == "ELEX.exe" && name_items_elex1.count(signatur) == 1)
-                                cout << "[ " << count << " ] I found ( " << name_items_elex1[signatur] << " ) and changed!" << '\n';
+                                cout << '\r' << "[ " << count << " ] I found ( " << name_items_elex1[signatur] << " ) and changed!" << '\n';
                             else if (mode == "ELEX2.exe" && name_items_elex2.count(signatur) == 1)
-                                cout << "[ " << count << " ] I found ( " << name_items_elex2[signatur] << " ) and changed!" << '\n';
+                                cout << '\r' << "[ " << count << " ] I found ( " << name_items_elex2[signatur] << " ) and changed!" << '\n';
                             else
-                                cout << "[ " << count << " ] I found and changed!" << '\n';
+                                cout << '\r' << "[ " << count << " ] I found and changed!" << '\n';
                         m1:
                             cout << "Enter 'y' if you want to continue the search or 'n' if you want to end the search: ";
                             cin >> yes_or_no;
@@ -162,7 +163,7 @@ void GetInGameItems(HANDLE hHandl, PROCESS_MEMORY_COUNTERS ppsmemCounters, LONGL
                             if (count > number_of_items)
                                 cout << " Completed!" << '\n';
                             else
-                                cout << " Please, Wait...." << '\n';
+                                cout << " Please, Wait....";
                         }
                     }
                 }
@@ -340,7 +341,7 @@ void SearchForInGameInventoryItems(string mode) {
         return;
     }
 m2:
-    cout << "Enter '1' if you want to change item ['Small Healling Potion']" << '\n'
+    cout << "Enter '1' if you want to change item ['Small Healing Potion']" << '\n'
          << "Enter '2' if you want to select another inventory item" << '\n' << " Your choice: ";
     if (mode == "ELEX2.exe") {
         cin >> yes_or_no;
@@ -350,7 +351,7 @@ m2:
                 cout << "Error: Inventar not faund!" << '\n';
                 return;
             }
-            СhangeAddress = GetСhangeAddrOneNameItem(hHandl, nullptr, &arr_struct_elex2, "Small Healling Potion");
+            СhangeAddress = GetСhangeAddrOneNameItem(hHandl, nullptr, &arr_struct_elex2, "SMALL HEALING POTION");
             if (СhangeAddress == -1) {
                 cout << "Error: Make sure 'Small Healing Potion' is in inventory" << '\n';
                 return;
@@ -381,7 +382,7 @@ m2:
                 cout << "Error: Inventar not faund!" << '\n';
                 return;
             }
-            СhangeAddress = GetСhangeAddrOneNameItem(hHandl, &arr_struct_elex1, nullptr, "Small Healling Potion");
+            СhangeAddress = GetСhangeAddrOneNameItem(hHandl, &arr_struct_elex1, nullptr, "Small Healing Potion");
             if (СhangeAddress == -1) {
                 cout << "Error: Make sure 'Small Healing Potion' is in inventory" << '\n';
                 return;
@@ -408,7 +409,7 @@ m2:
 
 void AboutProgram() {
     cout << "/**********************************************************************************************************" << '\n'
-         << "ELEX-ELEX2-Geting-All-In-Game-Items Version 1.1. A program for geting all inventory items of" << '\n'
+         << "ELEX-ELEX2-Geting-All-In-Game-Items Version 1.2. A program for geting all inventory items of" << '\n'
          << "the game ELEX 1 and 2. Used to enumerate all in-game inventory items and replace the old" << '\n'
          << "inventory item with the new item received." << '\n'
          << '\n'
